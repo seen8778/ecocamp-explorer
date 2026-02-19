@@ -27,7 +27,7 @@ const Navbar = () => {
           />
           <div className="flex flex-col leading-tight">
             <span className="text-sm font-semibold text-foreground">
-              [ชื่อกลุ่ม]
+              Eco Camp Explorer
             </span>
             <span className="text-xs text-muted-foreground">
               Green Future Camp M.5/8

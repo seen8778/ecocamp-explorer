@@ -28,14 +28,12 @@ const About = () => (
 
     <section className="container mx-auto px-4 py-12">
       <div className="mx-auto max-w-4xl">
-        {/* Group Info */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="mb-12 rounded-xl border border-border bg-card p-8 text-center shadow-sm"
         >
-          {/* Logo placeholder */}
           <div className="mx-auto mb-4 h-24 w-24 overflow-hidden rounded-2xl">
   <img
     src={logo}
@@ -47,7 +45,7 @@ const About = () => (
           <h2 className="mb-2 text-2xl font-bold text-card-foreground">
   Green Future Camp M.5/8
 </h2>
-          <p className="text-muted-foreground">เติมชื่อกลุ่มและโลโก้ของกลุ่มที่นี่</p>
+          <p className="text-muted-foreground">ทีมผู้จัดกิจกรรมเพื่อการเรียนรู้ด้านสิ่งแวดล้อมและการพัฒนาชุมชนอย่างยั่งยืน</p>
         </motion.div>
 
         {/* Vision / Mission */}
