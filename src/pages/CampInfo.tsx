@@ -4,10 +4,10 @@ import Layout from "@/components/Layout";
 import campScenery from "@/assets/camp-scenery.jpg";
 
 const poi = [
-  { icon: Mountain, title: "เส้นทางเดินป่า", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam." },
-  { icon: Droplets, title: "น้ำตกและลำธาร", text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident." },
-  { icon: Sun, title: "จุดชมวิว", text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa." },
-  { icon: Camera, title: "จุดถ่ายรูป", text: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti." },
+  { icon: Mountain, title: "เส้นทางเดินป่า", text: "เส้นทางศึกษาธรรมชาติของที่นี่มีระยะทางประมาณ 1.5–2 กิโลเมตร ผ่านป่าไม้ร่มรื่นและสะพานไม้ ผู้เข้าค่ายสามารถเรียนรู้เรื่องชนิดของพืชพรรณ ป่าเบญจพรรณ ระบบรากไม้ และความสัมพันธ์ของสิ่งมีชีวิตในระบบนิเวศ เหมาะสำหรับกิจกรรมฐานเรียนรู้หรือทำแบบบันทึกภาคสนาม" },
+  { icon: Droplets, title: "น้ำตกและลำธาร", text: "น้ำตกเอราวัณมีทั้งหมด 7 ชั้น แต่ละชั้นมีแอ่งน้ำสีฟ้าเขียวมรกตใสสะอาด สามารถใช้เป็นจุดศึกษาคุณภาพน้ำ การไหลของน้ำ และการเกิดชั้นหินปูนได้ ผู้เข้าค่ายสามารถสังเกตปลาในลำธารและเรียนรู้ความหลากหลายทางชีวภาพของสัตว์น้ำจืด" },
+  { icon: Sun, title: "จุดชมวิว", text: "บริเวณชั้นบนของน้ำตกสามารถมองเห็นแนวป่าและภูเขาโดยรอบ เหมาะสำหรับกิจกรรมสะท้อนความคิด หรือกิจกรรมเขียนบันทึกความประทับใจเกี่ยวกับธรรมชาติ ช่วยสร้างจิตสำนึกด้านการอนุรักษ์" },
+  { icon: Camera, title: "จุดถ่ายรูป", text: "แอ่งน้ำสีมรกต สะพานไม้กลางป่า และลำธารใสสะอาด เป็นจุดถ่ายภาพยอดนิยม ภาพที่ได้สะท้อนความงดงามของธรรมชาติ และสามารถนำไปใช้ประกอบรายงานหรือจัดนิทรรศการหลังจบค่ายได้" },
 ];
 
 const CampInfo = () => (
@@ -41,10 +41,7 @@ const CampInfo = () => (
             <span className="font-semibold">สถานที่จัดค่าย</span>
           </div>
           <p className="leading-relaxed text-muted-foreground">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisi eget ultricies
-            tincidunt, nunc nunc aliquam nunc, vitae aliquam nunc nunc vitae nunc. Praesent auctor,
-            nisi eget ultricies tincidunt. ค่ายตั้งอยู่ท่ามกลางธรรมชาติอันอุดมสมบูรณ์ มีทั้งป่าไม้ ลำธาร
-            และทิวทัศน์ที่สวยงาม เหมาะสำหรับการเรียนรู้เรื่องสิ่งแวดล้อมอย่างใกล้ชิด
+            ค่ายเยาวชนอนุรักษ์ธรรมชาติ ณ น้ำตกเอราวัณ ค่ายนี้จัดขึ้นเพื่อให้นักเรียนได้เรียนรู้เรื่องระบบนิเวศป่าไม้ แหล่งน้ำ และความสำคัญของการอนุรักษ์ทรัพยากรธรรมชาติ ผ่านกิจกรรมภาคสนามจริง ภายในพื้นที่ของ อุทยานแห่งชาติเอราวัณ ซึ่งมีความอุดมสมบูรณ์และเป็นแหล่งศึกษาธรรมชาติที่สำคัญของประเทศไทยผู้เข้าร่วมจะได้ทำกิจกรรมเดินสำรวจธรรมชาติ ศึกษาพันธุ์ไม้ สัตว์ป่า ระบบลำธาร และเรียนรู้การท่องเที่ยวเชิงอนุรักษ์ ค่ายตั้งอยู่ท่ามกลางป่าเขียวขจี ลำธารใสสะอาด และบรรยากาศเงียบสงบ เหมาะแก่การเรียนรู้นอกห้องเรียนอย่างแท้จริง
           </p>
         </motion.div>
 
