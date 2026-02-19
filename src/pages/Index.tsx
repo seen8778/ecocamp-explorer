@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { TreePine, Leaf, Users, ArrowRight } from "lucide-react";
 import Layout from "@/components/Layout";
+import logo from "@/assets/logo.png";
 import heroImg from "@/assets/hero-camp.jpg";
 import actPlanting from "@/assets/activity-planting.jpg";
 import actWildlife from "@/assets/activity-wildlife.jpg";
@@ -19,36 +20,36 @@ const fadeUp = {
 const highlights = [
   {
     icon: TreePine,
-    title: "หัวข้อหลักที่ 1",
-    desc: "รายละเอียดตัวอย่างสำหรับใส่ข้อมูลจริงภายหลัง",
+    title: "เรียนรู้ผ่านธรรมชาติ",
+    desc: "กิจกรรมภาคสนามที่ช่วยให้เข้าใจระบบนิเวศ ป่าไม้ และการอยู่ร่วมกับสิ่งแวดล้อมอย่างยั่งยืน",
   },
   {
     icon: Leaf,
-    title: "หัวข้อหลักที่ 2",
-    desc: "ข้อความชั่วคราวเพื่อจัดวางโครงสร้างเนื้อหา",
+    title: "ลงมือทำจริง",
+    desc: "ฝึกปฏิบัติทั้งการปลูกต้นไม้ เก็บขยะ และกิจกรรมอนุรักษ์ที่ทุกคนมีส่วนร่วมได้",
   },
   {
     icon: Users,
-    title: "หัวข้อหลักที่ 3",
-    desc: "ใส่คำอธิบายหรือจุดเด่นของโครงการตรงนี้",
+    title: "สร้างพลังทีม",
+    desc: "ส่งเสริมความสามัคคี ทักษะการสื่อสาร และความรับผิดชอบต่อสังคมผ่านการทำงานเป็นกลุ่ม",
   },
 ];
 
 const activities = [
   {
     img: actPlanting,
-    title: "กิจกรรมตัวอย่าง A",
-    desc: "คำอธิบายกิจกรรมแบบ placeholder สำหรับแก้ไขภายหลัง",
+    title: "ปลูกป่าฟื้นฟูพื้นที่สีเขียว",
+    desc: "ร่วมปลูกต้นไม้ในพื้นที่เสื่อมโทรม พร้อมเรียนรู้การดูแลต้นกล้าให้เติบโตอย่างยั่งยืน",
   },
   {
     img: actWildlife,
-    title: "กิจกรรมตัวอย่าง B",
-    desc: "ข้อความชั่วคราวเพื่อแสดงตำแหน่งของเนื้อหา",
+    title: "สำรวจความหลากหลายทางชีวภาพ",
+    desc: "ศึกษาสัตว์ป่าและพืชท้องถิ่นตามเส้นทางธรรมชาติ พร้อมเก็บข้อมูลพื้นฐานด้านนิเวศ",
   },
   {
     img: actCleanup,
-    title: "กิจกรรมตัวอย่าง C",
-    desc: "ใส่รายละเอียดกิจกรรมจริงเมื่อพร้อมใช้งาน",
+    title: "เก็บขยะชายหาดเพื่อทะเลสะอาด",
+    desc: "กิจกรรมจิตอาสาที่ช่วยลดขยะพลาสติก และสร้างความตระหนักเรื่องการจัดการขยะอย่างถูกวิธี",
   },
 ];
 
@@ -68,7 +69,6 @@ const Index = () => (
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          {/* Logo placeholder */}
           <div className="mx-auto mb-4 flex h-20 w-20 items-center justify-center overflow-hidden rounded-2xl bg-primary-foreground/10 backdrop-blur-sm ring-1 ring-primary-foreground/30">
             <img
               src={logo}
@@ -78,18 +78,18 @@ const Index = () => (
           </div>
 
           <h1 className="mb-2 text-4xl font-bold text-primary-foreground md:text-6xl">
-            ชื่อเว็บไซต์ / ชื่อโครงการ
+            Green Future Camp M.5/8
           </h1>
 
           <p className="mb-6 text-lg text-primary-foreground/80 md:text-xl">
-            คำอธิบายสั้น ๆ เกี่ยวกับเว็บไซต์หรือโครงการของคุณ
+            เว็บไซต์ประชาสัมพันธ์ค่ายอนุรักษ์สิ่งแวดล้อมของนักเรียน เพื่อแบ่งปันกิจกรรม ความรู้ และแรงบันดาลใจในการดูแลโลก
           </p>
 
           <Link
             to="/activities"
             className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 font-semibold text-primary-foreground transition-transform hover:scale-105"
           >
-            ปุ่มตัวอย่าง <ArrowRight className="h-4 w-4" />
+            ดูกิจกรรมทั้งหมด <ArrowRight className="h-4 w-4" />
           </Link>
         </motion.div>
       </div>
@@ -97,9 +97,9 @@ const Index = () => (
 
     {/* Highlights */}
     <section className="container mx-auto px-4 py-16">
-      <h2 className="mb-10 text-center text-3xl font-bold text-foreground">
-        หัวข้อส่วนที่สอง
-      </h2>
+        <h2 className="mb-10 text-center text-3xl font-bold text-foreground">
+          จุดเด่นของค่าย
+        </h2>
 
       <div className="grid gap-6 md:grid-cols-3">
         {highlights.map((item, i) => (
@@ -132,7 +132,7 @@ const Index = () => (
     <section className="section-fade py-16">
       <div className="container mx-auto px-4">
         <h2 className="mb-10 text-center text-3xl font-bold text-foreground">
-          หัวข้อกิจกรรมตัวอย่าง
+          ตัวอย่างกิจกรรมยอดนิยม
         </h2>
 
         <div className="grid gap-6 md:grid-cols-3">
@@ -172,7 +172,7 @@ const Index = () => (
             to="/activities"
             className="inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground transition-transform hover:scale-105"
           >
-            ปุ่มดูเพิ่มเติม <ArrowRight className="h-4 w-4" />
+            ดูรายละเอียดเพิ่มเติม <ArrowRight className="h-4 w-4" />
           </Link>
         </div>
       </div>
