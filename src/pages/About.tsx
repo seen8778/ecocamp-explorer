@@ -1,13 +1,14 @@
 import { motion } from "framer-motion";
 import { Users, Target, Heart } from "lucide-react";
 import Layout from "@/components/Layout";
+import logo from "@/assets/logo.png";
 
 const members = [
-  { name: "จีรัชญ์", num: 16 },
-  { name: "ชยางกูร", num: 17 },
-  { name: "ไชยพศ", num: 18 },
-  { name: "ปองคุณ", num: 19 },
-  { name: "วิธวินท์", num: 22 },
+  { name: "จีรัชญ์ ขวัญแก้ว", num: 16 },
+  { name: "ชยางกูร เชื้อเจริญ", num: 17 },
+  { name: "ไชยพศ จัดเจนนาวี", num: 18 },
+  { name: "ปองคุณ อนุกิตติรัตน์", num: 19 },
+  { name: "วิธวินท์ หอมอ่อน", num: 22 },
 ];
 
 const About = () => (
@@ -35,10 +36,17 @@ const About = () => (
           className="mb-12 rounded-xl border border-border bg-card p-8 text-center shadow-sm"
         >
           {/* Logo placeholder */}
-          <div className="mx-auto mb-4 flex h-24 w-24 items-center justify-center rounded-2xl border-2 border-dashed border-border bg-muted">
-            <span className="text-xs text-muted-foreground">โลโก้กลุ่ม</span>
-          </div>
-          <h2 className="mb-2 text-2xl font-bold text-card-foreground">[ชื่อกลุ่ม]</h2>
+          <div className="mx-auto mb-4 h-24 w-24 overflow-hidden rounded-2xl">
+  <img
+    src={logo}
+    alt="โลโก้กลุ่ม"
+    className="h-full w-full object-cover"
+  />
+</div>
+
+          <h2 className="mb-2 text-2xl font-bold text-card-foreground">
+  Green Future Camp M.5/8
+</h2>
           <p className="text-muted-foreground">เติมชื่อกลุ่มและโลโก้ของกลุ่มที่นี่</p>
         </motion.div>
 
