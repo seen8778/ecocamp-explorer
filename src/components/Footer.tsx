@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { TreePine, Heart } from "lucide-react";
+import { TreePine } from "lucide-react";
 
 const Footer = () => (
   <footer className="border-t border-border bg-card">
@@ -11,7 +11,7 @@ const Footer = () => (
             <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary">
               <TreePine className="h-5 w-5 text-primary-foreground" />
             </div>
-            <span className="font-semibold text-foreground">[ชื่อกลุ่ม]</span>
+            <span className="font-semibold text-foreground">Green Future Camp M.5/8</span>
           </div>
           <p className="text-sm text-muted-foreground">
             ค่ายอนุรักษ์สิ่งแวดล้อม — ร่วมกันดูแลธรรมชาติเพื่ออนาคตที่ยั่งยืน
@@ -34,18 +34,18 @@ const Footer = () => (
         <div>
           <h4 className="mb-3 font-semibold text-foreground">ผู้พัฒนาเว็บไซต์</h4>
           <ul className="space-y-1 text-sm text-muted-foreground">
-            <li>จีรัชญ์ เลขที่ 16</li>
-            <li>ชยางกูร เลขที่ 17</li>
-            <li>ไชยพศ เลขที่ 18</li>
-            <li>ปองคุณ เลขที่ 19</li>
-            <li>วิธวินท์ เลขที่ 22</li>
+            <li>จีรัชญ์ ขวัญแก้ว เลขที่ 16</li>
+            <li>ชยางกูร เชื้อเจริญ เลขที่ 17</li>
+            <li>ไชยพศ จัดเจนนาวี เลขที่ 18</li>
+            <li>ปองคุณ อนุกิตติรัตน์ เลขที่ 19</li>
+            <li>วิธวินท์ หอมอ่อน เลขที่ 22</li>
           </ul>
         </div>
       </div>
 
       <div className="mt-8 border-t border-border pt-6 text-center text-sm text-muted-foreground">
-        <p className="flex items-center justify-center gap-1">
-          สร้างด้วย <Heart className="h-4 w-4 text-destructive" /> เพื่อสิ่งแวดล้อม © 2025
+        <p>
+          © 2025 Green Future Camp M.5/8. All rights reserved.
         </p>
       </div>
     </div>
