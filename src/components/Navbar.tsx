@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, TreePine } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const navLinks = [
   { to: "/", label: "หน้าแรก" },
@@ -18,16 +19,19 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 border-b border-border bg-card/90 backdrop-blur-md">
       <div className="container mx-auto flex items-center justify-between px-4 py-3">
         {/* Logo area */}
-        <Link to="/" className="flex items-center gap-2">
-          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
-            <TreePine className="h-6 w-6 text-primary-foreground" />
-          </div>
+        <Link to="/" className="flex items-center gap-3">
+          <img
+            src={logo}
+            alt="Logo"
+            className="h-10 w-10 rounded-lg object-cover"
+          />
           <div className="flex flex-col leading-tight">
             <span className="text-sm font-semibold text-foreground">
-              {/* ชื่อกลุ่ม - เติมทีหลัง */}
               [ชื่อกลุ่ม]
             </span>
-            <span className="text-xs text-muted-foreground">ค่ายอนุรักษ์สิ่งแวดล้อม</span>
+            <span className="text-xs text-muted-foreground">
+              Green Future Camp M.5/8
+            </span>
           </div>
         </Link>
 
