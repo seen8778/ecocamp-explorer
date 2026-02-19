@@ -48,7 +48,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="font-semibold text-card-foreground">อีเมล</h3>
-                <p className="text-sm text-muted-foreground">camp@example.com</p>
+                <p className="text-sm text-muted-foreground">37445@bpk.ac.th</p>
               </div>
             </div>
 
@@ -58,7 +58,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="font-semibold text-card-foreground">โทรศัพท์</h3>
-                <p className="text-sm text-muted-foreground">0XX-XXX-XXXX</p>
+                <p className="text-sm text-muted-foreground">090-188-0046</p>
               </div>
             </div>
 
@@ -68,7 +68,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="font-semibold text-card-foreground">สถานที่</h3>
-                <p className="text-sm text-muted-foreground">โรงเรียน (เติมชื่อโรงเรียนที่นี่)</p>
+                <p className="text-sm text-muted-foreground">โรงเรียนบางปะกอกวิทยาคม</p>
               </div>
             </div>
           </motion.div>
