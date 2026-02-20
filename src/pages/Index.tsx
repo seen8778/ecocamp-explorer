@@ -43,38 +43,6 @@ const Index = () => (
       </div>
     </section>
 
-    {/* Activities preview */}
-    <section className="py-16">
-      <div className="container mx-auto px-4">
-        <h2 className="mb-8 text-center text-3xl font-bold text-foreground">กิจกรรมในค่าย</h2>
-        <div className="grid gap-6 md:grid-cols-3">
-          {activities.map((a, i) => (
-            <motion.div
-              key={a.title}
-              custom={i}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={fadeUp}
-              className="group overflow-hidden rounded-xl border border-border bg-card shadow-sm"
-            >
-              <div className="aspect-video overflow-hidden">
-                <img src={a.img} alt={a.title} className="h-full w-full object-cover transition-transform group-hover:scale-105" />
-              </div>
-              <div className="p-4">
-                <h3 className="mb-1 text-lg font-semibold text-card-foreground">{a.title}</h3>
-                <p className="text-sm text-muted-foreground">{a.desc}</p>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-        <div className="mt-8 text-center">
-          <Link to="/activities" className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 font-semibold text-primary-foreground transition-transform hover:scale-105">
-            ดูกิจกรรมทั้งหมด <ArrowRight className="h-4 w-4" />
-          </Link>
-        </div>
-      </div>
-    </section>
   </Layout>
 );
 
