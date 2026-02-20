@@ -17,42 +17,6 @@ const fadeUp = {
   })
 };
 
-const highlights = [
-{
-  icon: TreePine,
-  title: "หัวข้อหลักที่ 1",
-  desc: "รายละเอียดตัวอย่างสำหรับใส่ข้อมูลจริงภายหลัง"
-},
-{
-  icon: Leaf,
-  title: "หัวข้อหลักที่ 2",
-  desc: "ข้อความชั่วคราวเพื่อจัดวางโครงสร้างเนื้อหา"
-},
-{
-  icon: Users,
-  title: "หัวข้อหลักที่ 3",
-  desc: "ใส่คำอธิบายหรือจุดเด่นของโครงการตรงนี้"
-}];
-
-
-const activities = [
-{
-  img: actPlanting,
-  title: "กิจกรรมตัวอย่าง A",
-  desc: "คำอธิบายกิจกรรมแบบ placeholder สำหรับแก้ไขภายหลัง"
-},
-{
-  img: actWildlife,
-  title: "กิจกรรมตัวอย่าง B",
-  desc: "ข้อความชั่วคราวเพื่อแสดงตำแหน่งของเนื้อหา"
-},
-{
-  img: actCleanup,
-  title: "กิจกรรมตัวอย่าง C",
-  desc: "ใส่รายละเอียดกิจกรรมจริงเมื่อพร้อมใช้งาน"
-}];
-
-
 const Index = () =>
 <Layout>
     {/* Hero */}
@@ -79,63 +43,26 @@ const Index = () =>
           </div>
 
           <h1 className="mb-2 text-4xl font-bold text-primary-foreground md:text-6xl">
-            ชื่อเว็บไซต์ / ชื่อโครงการ
+            Green Future Camp
           </h1>
 
           <p className="mb-6 text-lg text-primary-foreground/80 md:text-xl">
-            คำอธิบายสั้น ๆ เกี่ยวกับเว็บไซต์หรือโครงการของคุณ
+            ณ น้ำตกเอราวัณ จังหวัดกาญจนบุรี
           </p>
 
           <Link
           to="/activities"
           className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 font-semibold text-primary-foreground transition-transform hover:scale-105">
 
-            ปุ่มตัวอย่าง <ArrowRight className="h-4 w-4" />
+            เข้าหน้ากิจกรรม <ArrowRight className="h-4 w-4" />
           </Link>
         </motion.div>
       </div>
     </section>
 
-    {/* Highlights */}
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     {/* Activities preview */}
     <section className="section-fade py-16">
       <div className="container mx-auto px-4">
-        <h2 className="mb-10 text-center text-3xl font-bold text-foreground">
-          หัวข้อกิจกรรมตัวอย่าง
-        </h2>
-
         <div className="grid gap-6 md:grid-cols-3">
           {activities.map((a, i) =>
         <motion.div
@@ -146,34 +73,11 @@ const Index = () =>
           viewport={{ once: true }}
           variants={fadeUp}
           className="group overflow-hidden rounded-xl border border-border bg-card shadow-sm">
-
-              <div className="aspect-video overflow-hidden">
-                <img
-              src={a.img}
-              alt="ภาพกิจกรรมตัวอย่าง"
-              className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
-
-              </div>
-
-              <div className="p-5">
-                <h3 className="mb-1 text-lg font-semibold text-card-foreground">
-                  {a.title}
-                </h3>
-
-                <p className="text-sm text-muted-foreground">
-                  {a.desc}
-                </p>
-              </div>
             </motion.div>
         )}
         </div>
 
-        <div className="mt-8 text-center">
-          <Link
-          to="/activities"
-          className="inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground transition-transform hover:scale-105">
-
-            ปุ่มดูเพิ่มเติม <ArrowRight className="h-4 w-4" />
+        
           </Link>
         </div>
       </div>
