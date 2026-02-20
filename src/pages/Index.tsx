@@ -88,46 +88,46 @@ const Index = () =>
 
           <Link
           to="/activities"
-          className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 font-semibold text-primary-foreground transition-transform hover:scale-105">กิจกรรม
+          className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 font-semibold text-primary-foreground transition-transform hover:scale-105">
 
-          <ArrowRight className="h-4 w-4" />
+            ปุ่มตัวอย่าง <ArrowRight className="h-4 w-4" />
           </Link>
         </motion.div>
       </div>
     </section>
 
     {/* Highlights */}
-    <section className="container mx-auto px-4 py-16">
-      <h2 className="mb-10 text-center text-3xl font-bold text-foreground">
-        หัวข้อส่วนที่สอง
-      </h2>
+    
 
-      <div className="grid gap-6 md:grid-cols-3">
-        {highlights.map((item, i) =>
-      <motion.div
-        key={item.title}
-        custom={i}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={fadeUp}
-        className="rounded-xl border border-border bg-card p-6 text-center shadow-sm transition-shadow hover:shadow-md">
 
-            <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-secondary">
-              <item.icon className="h-7 w-7 text-primary" />
-            </div>
 
-            <h3 className="mb-2 text-lg font-semibold text-card-foreground">
-              {item.title}
-            </h3>
 
-            <p className="text-sm text-muted-foreground">
-              {item.desc}
-            </p>
-          </motion.div>
-      )}
-      </div>
-    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     {/* Activities preview */}
     <section className="section-fade py-16">
