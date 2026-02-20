@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { TreePine, Leaf, Users, ArrowRight } from "lucide-react";
 import Layout from "@/components/Layout";
+import logo from "@/assets/logo.png";
 import heroImg from "@/assets/hero-camp.jpg";
 import actPlanting from "@/assets/activity-planting.jpg";
 import actWildlife from "@/assets/activity-wildlife.jpg";
