@@ -47,7 +47,7 @@ const About = () => (
           <h2 className="mb-2 text-2xl font-bold text-card-foreground">
   Green Future Camp M.5/8
 </h2>
-          <p className="text-muted-foreground">เติมชื่อกลุ่มและโลโก้ของกลุ่มที่นี่</p>
+          <p className="text-muted-foreground">ค่ายอนุรักษ์สิ่งแวดล้อม เพื่ออนาคตที่ยั่งยืน</p>
         </motion.div>
 
         {/* Vision / Mission */}
