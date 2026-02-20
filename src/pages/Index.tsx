@@ -13,84 +13,84 @@ const fadeUp = {
   visible: (i: number) => ({
     opacity: 1,
     y: 0,
-    transition: { delay: i * 0.15, duration: 0.5 },
-  }),
+    transition: { delay: i * 0.15, duration: 0.5 }
+  })
 };
 
 const highlights = [
-  {
-    icon: TreePine,
-    title: "หัวข้อหลักที่ 1",
-    desc: "รายละเอียดตัวอย่างสำหรับใส่ข้อมูลจริงภายหลัง",
-  },
-  {
-    icon: Leaf,
-    title: "หัวข้อหลักที่ 2",
-    desc: "ข้อความชั่วคราวเพื่อจัดวางโครงสร้างเนื้อหา",
-  },
-  {
-    icon: Users,
-    title: "หัวข้อหลักที่ 3",
-    desc: "ใส่คำอธิบายหรือจุดเด่นของโครงการตรงนี้",
-  },
-];
+{
+  icon: TreePine,
+  title: "หัวข้อหลักที่ 1",
+  desc: "รายละเอียดตัวอย่างสำหรับใส่ข้อมูลจริงภายหลัง"
+},
+{
+  icon: Leaf,
+  title: "หัวข้อหลักที่ 2",
+  desc: "ข้อความชั่วคราวเพื่อจัดวางโครงสร้างเนื้อหา"
+},
+{
+  icon: Users,
+  title: "หัวข้อหลักที่ 3",
+  desc: "ใส่คำอธิบายหรือจุดเด่นของโครงการตรงนี้"
+}];
+
 
 const activities = [
-  {
-    img: actPlanting,
-    title: "กิจกรรมตัวอย่าง A",
-    desc: "คำอธิบายกิจกรรมแบบ placeholder สำหรับแก้ไขภายหลัง",
-  },
-  {
-    img: actWildlife,
-    title: "กิจกรรมตัวอย่าง B",
-    desc: "ข้อความชั่วคราวเพื่อแสดงตำแหน่งของเนื้อหา",
-  },
-  {
-    img: actCleanup,
-    title: "กิจกรรมตัวอย่าง C",
-    desc: "ใส่รายละเอียดกิจกรรมจริงเมื่อพร้อมใช้งาน",
-  },
-];
+{
+  img: actPlanting,
+  title: "กิจกรรมตัวอย่าง A",
+  desc: "คำอธิบายกิจกรรมแบบ placeholder สำหรับแก้ไขภายหลัง"
+},
+{
+  img: actWildlife,
+  title: "กิจกรรมตัวอย่าง B",
+  desc: "ข้อความชั่วคราวเพื่อแสดงตำแหน่งของเนื้อหา"
+},
+{
+  img: actCleanup,
+  title: "กิจกรรมตัวอย่าง C",
+  desc: "ใส่รายละเอียดกิจกรรมจริงเมื่อพร้อมใช้งาน"
+}];
 
-const Index = () => (
-  <Layout>
+
+const Index = () =>
+<Layout>
     {/* Hero */}
     <section className="relative h-[70vh] min-h-[400px] overflow-hidden">
       <img
-        src={heroImg}
-        alt="ภาพหน้าปกตัวอย่าง"
-        className="absolute inset-0 h-full w-full object-cover"
-      />
+      src={heroImg}
+      alt="ภาพหน้าปกตัวอย่าง"
+      className="absolute inset-0 h-full w-full object-cover" />
+
       <div className="hero-overlay absolute inset-0" />
       <div className="relative z-10 flex h-full flex-col items-center justify-center px-4 text-center">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}>
+
           {/* Logo placeholder */}
           <div className="mx-auto mb-4 flex h-20 w-20 items-center justify-center overflow-hidden rounded-2xl bg-primary-foreground/10 backdrop-blur-sm ring-1 ring-primary-foreground/30">
             <img
-              src={logo}
-              alt="โลโก้กลุ่ม"
-              className="h-full w-full object-contain p-2"
-            />
+            src={logo}
+            alt="โลโก้กลุ่ม"
+            className="h-full w-full object-contain p-2" />
+
           </div>
 
-          <h1 className="mb-2 text-4xl font-bold text-primary-foreground md:text-6xl">
-            ชื่อเว็บไซต์ / ชื่อโครงการ
-          </h1>
+          <h1 className="mb-2 text-4xl font-bold text-primary-foreground md:text-6xl">Green Future Camp
 
-          <p className="mb-6 text-lg text-primary-foreground/80 md:text-xl">
-            คำอธิบายสั้น ๆ เกี่ยวกับเว็บไซต์หรือโครงการของคุณ
-          </p>
+        </h1>
+
+          <p className="mb-6 text-lg text-primary-foreground/80 md:text-xl">ณ น้ำตกเอราวัณ จ.กาญจนบุรี
+
+        </p>
 
           <Link
-            to="/activities"
-            className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 font-semibold text-primary-foreground transition-transform hover:scale-105"
-          >
-            ปุ่มตัวอย่าง <ArrowRight className="h-4 w-4" />
+          to="/activities"
+          className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 font-semibold text-primary-foreground transition-transform hover:scale-105">รายละเอียด
+
+          <ArrowRight className="h-4 w-4" />
           </Link>
         </motion.div>
       </div>
@@ -98,21 +98,21 @@ const Index = () => (
 
     {/* Highlights */}
     <section className="container mx-auto px-4 py-16">
-      <h2 className="mb-10 text-center text-3xl font-bold text-foreground">
-        หัวข้อส่วนที่สอง
-      </h2>
+      
+
+
 
       <div className="grid gap-6 md:grid-cols-3">
-        {highlights.map((item, i) => (
-          <motion.div
-            key={item.title}
-            custom={i}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={fadeUp}
-            className="rounded-xl border border-border bg-card p-6 text-center shadow-sm transition-shadow hover:shadow-md"
-          >
+        {highlights.map((item, i) =>
+      <motion.div
+        key={item.title}
+        custom={i}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={fadeUp}
+        className="rounded-xl border border-border bg-card p-6 text-center shadow-sm transition-shadow hover:shadow-md">
+
             <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-secondary">
               <item.icon className="h-7 w-7 text-primary" />
             </div>
@@ -125,7 +125,7 @@ const Index = () => (
               {item.desc}
             </p>
           </motion.div>
-        ))}
+      )}
       </div>
     </section>
 
@@ -137,22 +137,22 @@ const Index = () => (
         </h2>
 
         <div className="grid gap-6 md:grid-cols-3">
-          {activities.map((a, i) => (
-            <motion.div
-              key={a.title}
-              custom={i}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={fadeUp}
-              className="group overflow-hidden rounded-xl border border-border bg-card shadow-sm"
-            >
+          {activities.map((a, i) =>
+        <motion.div
+          key={a.title}
+          custom={i}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeUp}
+          className="group overflow-hidden rounded-xl border border-border bg-card shadow-sm">
+
               <div className="aspect-video overflow-hidden">
                 <img
-                  src={a.img}
-                  alt="ภาพกิจกรรมตัวอย่าง"
-                  className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                />
+              src={a.img}
+              alt="ภาพกิจกรรมตัวอย่าง"
+              className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+
               </div>
 
               <div className="p-5">
@@ -165,20 +165,20 @@ const Index = () => (
                 </p>
               </div>
             </motion.div>
-          ))}
+        )}
         </div>
 
         <div className="mt-8 text-center">
           <Link
-            to="/activities"
-            className="inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground transition-transform hover:scale-105"
-          >
+          to="/activities"
+          className="inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground transition-transform hover:scale-105">
+
             ปุ่มดูเพิ่มเติม <ArrowRight className="h-4 w-4" />
           </Link>
         </div>
       </div>
     </section>
-  </Layout>
-);
+  </Layout>;
+
 
 export default Index;
